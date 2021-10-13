@@ -17,7 +17,7 @@ end
 %%Solve the similar matrix
 xs=zeros(number,number);         %Initialize the similar matrix
 [rows,cols]=size(image{1});     %Find the number of rows and columns
-count=zeros(2,number);          %In order to find the edge pictures, counting for the edges part numbered by 1
+count=zeros(2,number);          %Use the page margins to find the first and the last picture
 for i=1:number
     %Count from the far left
     count(1,i)=sum(image{i}(:,1)==1);
